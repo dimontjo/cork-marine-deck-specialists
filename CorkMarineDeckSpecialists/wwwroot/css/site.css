@@ -37,3 +37,10 @@
 .hero-copy p{max-width:650px}
 @media(max-width:850px){.hero-layout{grid-template-columns:minmax(150px,.65fr) minmax(0,1.35fr);gap:26px}.hero-emblem img{max-width:240px}}
 @media(max-width:600px){.hero-layout{grid-template-columns:1fr;gap:22px}.hero-emblem img{max-width:210px}.hero-copy{text-align:center}.hero-copy h1{font-size:clamp(2.4rem,9vw,3.3rem)}.hero-copy .actions{justify-content:center}.hero{padding-top:52px}}
+
+/* Larger emblem, aligned to the upper-left of the hero content */
+.hero-layout{grid-template-columns:minmax(300px,.95fr) minmax(0,1.3fr);align-items:start;gap:clamp(24px,4vw,58px)}
+.hero-emblem{align-items:flex-start;justify-content:flex-start;align-self:start}
+.hero-emblem img{max-width:470px}
+@media(max-width:850px){.hero-layout{grid-template-columns:minmax(200px,.8fr) minmax(0,1.2fr);gap:22px}.hero-emblem img{max-width:350px}}
+@media(max-width:600px){.hero-layout{grid-template-columns:1fr}.hero-emblem{justify-content:flex-start}.hero-emblem img{width:min(80%,300px);max-width:none}.hero-copy{text-align:left}.hero-copy .actions{justify-content:flex-start}}
