@@ -5,7 +5,10 @@ The original HTML proof-of-concept is in the repository root as `index.html` on 
 ## Run locally
 Install the .NET 10 SDK and run:
 
+For IDE builds targeting .NET 10, use Visual Studio 2026 (18.0 or later). Visual Studio 2022 does not support targeting .NET 10; use the .NET 10 CLI if keeping that IDE installed.
+
 ```powershell
+$env:ASPNETCORE_ENVIRONMENT = "Development"
 dotnet run --project CorkMarineDeckSpecialists/CorkMarineDeckSpecialists.csproj
 ```
 

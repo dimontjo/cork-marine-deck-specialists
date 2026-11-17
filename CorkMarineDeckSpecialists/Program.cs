@@ -6,5 +6,6 @@ if (!app.Environment.IsDevelopment()) { app.UseExceptionHandler("/error"); app.U
 app.UseHttpsRedirection();
 app.UseStaticFiles();
 app.UseAntiforgery();
+app.MapStaticAssets();
 app.MapRazorComponents<App>().AddInteractiveServerRenderMode();
 app.Run();
