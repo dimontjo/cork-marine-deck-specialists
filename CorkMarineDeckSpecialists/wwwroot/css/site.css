@@ -27,3 +27,13 @@
 .care-source a{color:#245f61}
 @media(max-width:900px){.product-intro{grid-template-columns:1fr;gap:26px}.care-grid{grid-template-columns:1fr}.brand-mark{width:58px;height:54px}.brand-name{font-size:1rem}.brand-name span{font-size:.78rem}}
 @media(max-width:600px){.nav{min-height:78px;gap:8px}.brand{gap:7px}.brand-mark{width:43px;height:45px}.brand-name{font-size:.8rem}.brand-name span{font-size:.64rem;letter-spacing:0}.navlinks .button{font-size:.72rem;padding:9px 10px}.product-highlight{padding:28px 24px}}
+
+/* Featured emblem and hero headline */
+.hero-layout{display:grid;grid-template-columns:minmax(210px,.75fr) minmax(0,1.6fr);align-items:center;gap:clamp(30px,5vw,76px)}
+.hero-emblem{display:flex;align-items:center;justify-content:center;min-width:0}
+.hero-emblem img{display:block;width:100%;max-width:350px;height:auto;object-fit:contain;filter:drop-shadow(0 12px 20px rgba(0,0,0,.16))}
+.hero-copy{min-width:0}
+.hero-copy h1{font-size:clamp(2.7rem,5vw,4.7rem);margin:18px 0 24px}
+.hero-copy p{max-width:650px}
+@media(max-width:850px){.hero-layout{grid-template-columns:minmax(150px,.65fr) minmax(0,1.35fr);gap:26px}.hero-emblem img{max-width:240px}}
+@media(max-width:600px){.hero-layout{grid-template-columns:1fr;gap:22px}.hero-emblem img{max-width:210px}.hero-copy{text-align:center}.hero-copy h1{font-size:clamp(2.4rem,9vw,3.3rem)}.hero-copy .actions{justify-content:center}.hero{padding-top:52px}}
